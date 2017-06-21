@@ -1,0 +1,6 @@
+server:
+  port: ${PORT:5000}
+security:
+  user:
+    name: root
+    password: s3cr3t
