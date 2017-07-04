@@ -1,6 +1,15 @@
-server:
-  port: 8888
 security:
   user:
     name: root
     password: s3cr3t
+    
+    sf.generate.authToken.cron=0 0/1 * * * *
+
+#ur
+sf.auth.url=https://cs81.salesforce.com/services/oauth2/token
+sf.username=trial.21@cli.com.murabaha
+sf.password=Merc$12345
+sf.client_id=3MVG9od6vNol.eBjAcQljw9ExDY6doeZRqtdzsk7jBOt.t1tzAWqyWZNb_bDwdGHq0FmDznw4143tBx.NwW9n
+sf.client_secret=8814684124517804023
+sf.client.auth.url=https://cs81.salesforce.com/services/apexrest/mcLogin/v1/
+
