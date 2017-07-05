@@ -1,0 +1,35 @@
+#web server
+server.port=9191
+server.contextPath=/api
+
+#cron for fetching the access token from SF
+#sf.generate.authToken.cron=0 * 0/1 * * *
+sf.generate.authToken.cron=0 0/1 * * * *
+
+#ur
+sf.auth.url=https://cs81.salesforce.com/services/oauth2/token
+sf.username=trial.21@cli.com.murabaha
+sf.password=Merc$12345
+sf.client_id=3MVG9od6vNol.eBjAcQljw9ExDY6doeZRqtdzsk7jBOt.t1tzAWqyWZNb_bDwdGHq0FmDznw4143tBx.NwW9n
+sf.client_secret=8814684124517804023
+sf.client.auth.url=https://cs81.salesforce.com/services/apexrest/mcLogin/v1/
+
+#Application specific
+oauth.client_id=admin
+oauth.client_secret=admin
+oauth.client_scopes=read,write
+oauth.client_grantTypes=password,refresh_token
+oauth.token_expire_time=180
+
+#sign key for jwt token
+#Todo: change to standard key
+jwt.token_sign_key=123
+
+#cros accept origin url
+cros.access.control.origin.value=http://localhost:8084
+
+#cros accept headers
+cros.access.control.headers.value=Origin, Content-Type, Accept, Authorization
+
+#cros url pattern
+cros.access.control.api.pattern=/oauth/**
